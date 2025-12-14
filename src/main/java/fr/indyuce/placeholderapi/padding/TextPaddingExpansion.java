@@ -41,7 +41,7 @@ public class TextPaddingExpansion extends PlaceholderExpansion implements Config
     public void start() {
         negativeSpaceBaseChar = getInt("NegativeSpaceBaseChar", 0xD0000);
         defaultCharSize = getInt("DefaultCharSize", 5);
-        charSizeExceptions = getStringList("CharSizeExceptions").stream().map(String::toCharArray)
+        charSizeExceptions = getStringList("CharSizes").stream().map(String::toCharArray)
                 .collect(Collectors.toMap(arr -> arr[0], arr -> Integer.parseInt(String.valueOf(arr[1]))));
     }
 
@@ -54,7 +54,7 @@ public class TextPaddingExpansion extends PlaceholderExpansion implements Config
     public Map<String, Object> getDefaults() {
         return Map.of("DefaultCharSize", 5,
                 "NegativeSpaceBaseChar", 0xD0000,
-                "CharSizeExceptions", List.of("f4", "i1", "k4", "l2", "t3", "I3", "'1", " 3", ",1", "(3", ")3"));
+                "CharSizes", List.of("f4", "i1", "k4", "l2", "t3", "I3", "'1", " 3", ",1", "(3", ")3"));
     }
 
     //endregion
