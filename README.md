@@ -40,7 +40,6 @@ lore:
 | `%pad_right_<total>_<text>%`                 | Right-aligns the text in a space of total width `<total>`. Text length is calculated automatically. |
 | `%pad_centerl_<total>_<text_length>_<text>%` | Centers the text in a space of total width `<total>`. Text length is provided.                      |
 | `%pad_space_<size>%`                         | Provides a custom font with positive/negative space, from -8192 to +8192                            |
-| `%pad_space_<size>%`                         | Provides a custom font with positive/negative space, from -8192 to +8192                            |
 | `%pad_len_<text>%`                           | Returns the size in pixels of provided text, useful for debugging.                                  |
 
 
