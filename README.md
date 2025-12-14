@@ -45,7 +45,8 @@ lore:
 
 ## Installation
 
-Compile this expansion and install the JAR file inside your `./plugins/PlaceholderAPI/expansions` folder.
+- Download the [latest release available](https://github.com/Indyuce/papi-expansion-text-padding/releases) or compile it from scratch.
+- Install the JAR file inside your `./plugins/PlaceholderAPI/expansions` folder.
 
 ## Configuration
 
